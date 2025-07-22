@@ -15,4 +15,6 @@ Cmds
 6. ps - shows the running container
 7. ps -a - shows the container history
 8. -p<porta:portb> - port forwarding from PC to container.
-
+9. logs - shows the log of a container
+10. --name - used to give a name to a container while creating it.
+11. exec -it - in terminal, used to open a terminal of a detached docker container.
