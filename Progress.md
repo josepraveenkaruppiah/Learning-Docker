@@ -26,3 +26,35 @@ run a backend, boot up the frontend, and crete a docker network. so containers c
 _docker network_
 
 docker network is a network to create for a container(s) to communicate with other container(s) and nodes using container name. 
+
+## Docker compose
+A docker compose is a YAML file where all the executable cmd is stored in a formate (syntax) so instead we run the file to up and down a container/netwwork. 
+
+_to run_
+
+docker-compose -f "filename" up/down
+
+up is to host it, down is to go offline. 
+
+## Docker file (Dockerfile)
+
+Docker file is similar to compose file, where this file is used to create an image. the file is written using a certain syntax. 
+
+    FROM <base image>
+
+    ENV <environment variables>
+
+    RUN mkdir -p /home/app (where you want the cmds to be running inside a container)
+
+    COPY . /home/app (the files that is copied into an image)
+
+    CMD ["image","file"] (any exec that has to be running on the host "outside the container")
+
+
+_to run_
+
+    docker build -t <name of the image:tag> <dir>
+    docker rm <container id/name> (to remove a container)
+    docker rmi <image id/name> (to remove a image)
+
+    
