@@ -57,4 +57,8 @@ _to run_
     docker rm <container id/name> (to remove a container)
     docker rmi <image id/name> (to remove a image)
 
-    
+## Private Docker Repository
+
+Pushing our built docker image into a private registry on AWS, 
+
+learnt how to push and pull the image and learnt that an AWS repository can hold upto a 1000 images.
