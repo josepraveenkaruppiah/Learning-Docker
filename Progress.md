@@ -62,3 +62,27 @@ _to run_
 Pushing our built docker image into a private registry on AWS, 
 
 learnt how to push and pull the image and learnt that an AWS repository can hold upto a 1000 images.
+
+## Docker volume
+is used for data presistence for docker imaegs and database, and stateful application. 
+basically, plugs in a host file directory to container's file directory...
+
+### Docker volume types for local
+
+docker run -v
+1. Host volume
+    - host:container cd
+2. Anonymous volume
+    - container cd
+3. Named volume
+    - foldername:container cd
+
+### Docker volume in docker compose
+
+Named volume
+- foldername:container cd
+
+## Summary
+As a whole i have completed studying docker and how it is used with jenkins and aws. 
+
+# The End
